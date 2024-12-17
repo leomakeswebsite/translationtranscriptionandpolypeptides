@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translation - Protein Synthesis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Translation - Protein Synthesis</h1>
+        <p>The process of converting mRNA into a polypeptide chain in the cytoplasm.</p>
+    </header>
+
+    <section class="content">
+        <h2>Step 2: Translation</h2>
+        <p>In translation, mRNA is read by ribosomes, and amino acids are linked together to form a protein. This process happens in the cytoplasm and involves tRNA, ribosomes, and mRNA.</p>
+    </section>
+
+    <canvas id="translationCanvas" width="600" height="400"></canvas>
+
+    <script>
+        var canvas = document.getElementById("translationCanvas");
+        var ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.arc(150, 200, 50, 0, Math.PI * 2);
+        ctx.fillStyle = "#FF4136";
+        ctx.fill();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "#D43F00";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(50, 200);
+        ctx.lineTo(450, 200);
+        ctx.setLineDash([5, 15]);
+        ctx.strokeStyle = "#0074D9";
+        ctx.lineWidth = 3;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(150, 180);
+        ctx.lineTo(100, 150);
+        ctx.lineTo(200, 150);
+        ctx.lineTo(150, 180);
+        ctx.strokeStyle = "#39CCCC";
+        ctx.lineWidth = 3;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(200, 200);
+        ctx.lineTo(350, 200);
+        ctx.lineTo(340, 190);
+        ctx.moveTo(350, 200);
+        ctx.lineTo(340, 210);
+        ctx.strokeStyle = "#000";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        ctx.fillStyle = "#000";
+        ctx.font = "16px Arial";
+        ctx.fillText("Ribosome", 120, 170);
+        ctx.fillText("mRNA", 20, 180);
+        ctx.fillText("tRNA Anticodon", 70, 140);
+        ctx.fillText("Translation", 250, 230);
+    </script>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+            <li><a href="polypeptide.html">Next: Polypeptide Chain Formation</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
