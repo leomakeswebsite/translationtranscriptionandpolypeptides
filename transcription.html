@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transcription - Protein Synthesis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Transcription</h1>
+        <p>The process of copying DNA into mRNA in the nucleus.</p>
+    </header>
+
+    <section class="content">
+        <h2>Step 1: Transcription</h2>
+        
+        <p>In transcription, a segment of DNA is used to create messenger RNA (mRNA). This process happens inside the nucleus of the cell. The mRNA will later be used as a template for building proteins during translation.</p>
+    </section>
+    <h1>Transcription - Protein Synthesis</h1>
+    <p>DNA is transcribed into mRNA inside the nucleus.</p>
+</header>
+<canvas id="transcriptionCanvas" width="600" height="400"></canvas>
+<script>
+    var canvas = document.getElementById("transcriptionCanvas");
+    var ctx = canvas.getContext("2d");
+
+    ctx.beginPath();
+    ctx.moveTo(50, 100);
+    ctx.lineTo(50, 300);
+    ctx.moveTo(100, 100);
+    ctx.lineTo(100, 300);
+    ctx.setLineDash([5, 15]);
+    ctx.strokeStyle = "#0074D9";
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(300, 100);
+    ctx.lineTo(300, 300);
+    ctx.setLineDash([]);
+    ctx.strokeStyle = "#FF4136";
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(100, 200);
+    ctx.lineTo(200, 200);
+    ctx.lineTo(190, 190);
+    ctx.moveTo(200, 200);
+    ctx.lineTo(190, 210);
+    ctx.strokeStyle = "#000";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.fillStyle = "#000";
+    ctx.font = "16px Arial";
+    ctx.fillText("DNA", 20, 80);
+    ctx.fillText("mRNA", 290, 80);
+    ctx.fillText("RNA Polymerase", 120, 160);
+    ctx.fillText("Transcription", 120, 220);
+</script>
+</body>
+</html>
+    <nav>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+            <li><a href="translation.html">Next: Translation</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
